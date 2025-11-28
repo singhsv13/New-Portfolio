@@ -1,5 +1,6 @@
 import React from 'react';
 import { User, Cpu, Zap, Eye, Download, FileText } from 'lucide-react';
+import logo from '../assets/profile_pic.jpg'
 
 const About: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ const About: React.FC = () => {
               {/* Image Container */}
               <div className="w-full h-full relative overflow-hidden bg-black group-hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] transition-shadow duration-500">
                 <img 
-                  src="../assets/profile_pic.jpg" 
+                  src={logo} 
                   alt="Simarprit Virdi" 
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 />
